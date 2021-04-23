@@ -1,0 +1,83 @@
+.global {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+  margin-top: 70px;
+}
+.allSkills {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 0px 50px 0px 50px;
+}
+.webSkills {
+  display: flex;
+  flex-flow: column nowrap;
+  flex: 1;
+  padding: 12px;
+}
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+  border-radius: 10px;
+}
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .webSkills {
+    display: flex;
+    flex-flow: column wrap;
+    flex: 1;
+    padding: 12px;
+    min-width: 50%;
+  }
+
+}
+
+.html {
+  width: 80%;
+  background-color: #80d595;
+  border-radius: 10px;
+} /* Green */
+.css {
+  width: 70%;
+  background-color: #7661db;
+  border-radius: 10px;
+} /* Blue */
+.ts {
+  width: 80%;
+  background-color: #599eb9;
+  border-radius: 10px;
+} /* Red */
+.angular {
+  width: 80%;
+  background-color: #ff5549;
+  border-radius: 10px;
+} /* Red */
+.android {
+  width: 70%;
+  background-color: #ffe084;
+  border-radius: 10px;
+} /* Red */
+.flutter {
+  width: 30%;
+  background-color: #3dbae1;
+  border-radius: 10px;
+} /* Red */
+.git {
+  width: 60%;
+  background-color: #f49836;
+  border-radius: 10px;
+} /* Red */
+.agilite {
+  width: 70%;
+  background-color: #db94da;
+  border-radius: 10px;
+} /* Red */

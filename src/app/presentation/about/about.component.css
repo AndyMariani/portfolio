@@ -1,0 +1,72 @@
+section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+  font-size: 17px;
+}
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 70px;
+  text-align: center;
+}
+h1{
+  font-size: xx-large;
+}
+p{
+  text-align: justify;
+}
+.image {
+  height: 50vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  flex: 0.5;
+}
+img {
+  height: inherit;
+  border-radius: 10px;
+}
+.informations {
+  display: flex;
+  flex-flow: column wrap;
+  flex: 1;
+  padding: 10px;
+  background-color: aliceblue;
+  border-radius: 12px;
+  margin: 0px 5px 0px 5px;
+}
+.hobbies {
+  display: flex;
+  flex-flow: row;
+  border-radius: 10px;
+}
+.hobbie {
+  padding: 10px;
+  flex: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 0px;
+  }
+  .image {
+    flex: 1;
+  }
+  .hobbies {
+    display: flex;
+    flex-flow: column;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hobbies {
+    display: flex;
+    flex-flow: row;
+  }
+  .container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+}

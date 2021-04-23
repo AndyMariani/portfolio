@@ -1,0 +1,60 @@
+.formations {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.diplomes {
+  padding: 5px;
+  text-align: center;
+}
+.diplome {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15px;
+  background-color: #fee9d6;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+#etudes_img {
+  height: 50vh;
+  width: auto;
+}
+#travail_img {
+  height: 50vh;
+  width: auto;
+}
+img {
+  height: inherit;
+}
+.experiences {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.travails {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  padding: 5px;
+  text-align: center;
+}
+.travail {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 15px;
+  background-color: #e5ecfe;
+  text-align: center;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .formations {
+    flex-direction: column-reverse;
+  }
+
+}

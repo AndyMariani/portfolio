@@ -1,0 +1,67 @@
+/* Test vidéo parallax */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #ffffff, transparent);
+  z-index: 1000;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+section .titre {
+  z-index: 2;
+  font-size: 50px;
+  padding: 0px 40px 0px 40px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+  color: #f1f8fc;
+}
+#n1 {
+  z-index: 3;
+}
+#n2 {
+  z-index: 2;
+}
+#n3 {
+  z-index: 1;
+}
+#lune_full {
+  z-index: 2;
+}
+#etoile_full{
+  z-index: 2;
+}
+#fusee{
+  z-index: 2;
+}
+section::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #5d94db;
+  mix-blend-mode: color;
+  z-index: 1;
+}

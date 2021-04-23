@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="formations">
+    <div class="diplomes">
+      <h3>Mes diplômes</h3>
+      <div class="diplome" *ngFor="let formation of myFormations">
+        <h3>{{ formation.name }}</h3>
+        <span
+          >{{ formation.dateStart | date: "YYYY" }} -
+          {{ formation.dateEnd | date: "YYYY" }}</span
+        >
+        <br />
+        <span>{{ formation.lieu }}</span>
+      </div>
+    </div>
+    <div id="etudes_img">
+      <img src="../../../assets/images/etudes.png" />
+    </div>
+  </div>
+  <div class="experiences">
+    <div id="travail_img">
+      <img src="../../../assets/images/travail.png" />
+    </div>
+    <div class="travails">
+      <h3>Mon expérience</h3>
+      <div class="travail" *ngFor="let travail of myExperiences">
+        <h3>{{ travail.name }}</h3>
+        <span
+          >{{ travail.dateStart | date: "MM/YYYY" }} -
+          {{ travail.dateEnd | date: "MM/YYYY" }}</span
+        >
+        <br />
+        <span>{{ travail.lieu }}</span>
+        <br/>
+        <p>{{travail.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
